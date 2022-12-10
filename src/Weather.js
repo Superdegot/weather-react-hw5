@@ -38,8 +38,6 @@ function search() {
  setCity(event.target.value);
  
  }
-
-
  
 
   if (weatherData.ready) {
@@ -60,14 +58,13 @@ function search() {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-outline-primary w-100"
               />
             </div>
           </div>
         </form>
-<WeatherInfo data={weatherData}/>
-<WeatherForecast coordinates={weatherData.coordinates}/>
-       
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
